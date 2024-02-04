@@ -1,5 +1,4 @@
-import { useState } from "react";
-import "./App.css";
+import './App.css'
 import StateWithCaseComponent from "./StateWithClassComponent";
 import PropesInReact from "./PropesInReact";
 import StudentInfo from "./StudentInfo";
@@ -15,10 +14,11 @@ import ComponentDidmount from "./ComponentDidmount";
 import ComponentDidUpdate from "./ComponentDidUpdate";
 import ComponentShouldUpdate from "./ComponentShouldUpdate";
 import ComponentWillUnmount from "./ComponentWillUnmount";
+import Router from "./React_Router/Router";
 
 function App() {
   return (
-    <>
+    <div className='app-component'>
       {/* <StateWithClassComponent/> */}
       {/* <h1>Propes in React Js</h1> */}
       {/* <PropesInReact text="hello" /> */}
@@ -48,15 +48,18 @@ function App() {
 
       {/* <LoginValidation/> */}
 
-      {/* <PassingFunc/> */}.
+      {/* <PassingFunc/> */}
 
       {/* <ConstructorLife/> */}
 
       {/* <ComponentDidmount/> */}
       {/* <ComponentDidUpdate/> */}
       {/* <ComponentShouldUpdate/> */}
-      <ComponentWillUnmount/>
-    </>
+      {/* <ComponentWillUnmount/> */}
+
+      {/* <Router/> */}
+
+    </div>
   );
 }
 
