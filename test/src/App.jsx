@@ -19,7 +19,7 @@ import ComponentWillUnmount from "./ComponentWillUnmount";
 function App() {
   return (
     <>
-      {/* <StateWithCaseComponent/> */}
+      {/* <StateWithClassComponent/> */}
       {/* <h1>Propes in React Js</h1> */}
       {/* <PropesInReact text="hello" /> */}
 
