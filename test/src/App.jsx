@@ -1,4 +1,4 @@
-import './App.css'
+import "./App.css";
 import StateWithCaseComponent from "./StateWithClassComponent";
 import PropesInReact from "./PropesInReact";
 import StudentInfo from "./StudentInfo";
@@ -15,10 +15,11 @@ import ComponentDidUpdate from "./ComponentDidUpdate";
 import ComponentShouldUpdate from "./ComponentShouldUpdate";
 import ComponentWillUnmount from "./ComponentWillUnmount";
 import Router from "./React_Router/Router";
+import SearchParamsHook from "./React_Router/SearchParamsHook";
 
 function App() {
   return (
-    <div className='app-component'>
+    <div className="app-component">
       {/* <StateWithClassComponent/> */}
       {/* <h1>Propes in React Js</h1> */}
       {/* <PropesInReact text="hello" /> */}
@@ -57,7 +58,7 @@ function App() {
       {/* <ComponentShouldUpdate/> */}
       {/* <ComponentWillUnmount/> */}
 
-      {/* <Router/> */}
+      <Router/>
 
     </div>
   );
