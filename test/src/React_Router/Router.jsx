@@ -9,6 +9,7 @@ import Student1 from "./Student1";
 import Student2 from "./student2";
 import PageNotFound from "./PageNotFound";
 import SearchParamsHook from "./SearchParamsHook";
+import User from "./User";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function Router() {
             </Route>
           </Route>
           <Route path="/search" element={<SearchParamsHook />} />
+          <Route path="user/:userId" element={<User/>}/>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
