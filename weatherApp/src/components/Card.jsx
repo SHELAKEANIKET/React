@@ -12,8 +12,7 @@ function Card() {
           <h2>{data?.current?.temp_c} °C</h2>
           <h3>{data?.current?.condition?.text}</h3>
           <h4>
-            {data?.location?.name}, {data?.location?.region}{" "}
-            {data?.location?.country}
+            {data?.location?.name}, {data?.location?.region}, {data?.location?.country}
           </h4>
         </div>
       ) : null}

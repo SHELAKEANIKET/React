@@ -1,6 +1,7 @@
 import React from 'react'
 import { useWeather } from '../context/WeatherContextProvider';
 
+
 function UserInput() {
 
     const {city,setCity,fetchData} = useWeather();

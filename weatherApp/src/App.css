@@ -5,10 +5,10 @@
   width: 100%;
   height: 100vh;
   flex-direction: column;
-  background: linear-gradient(rgb(86, 86, 240), rgb(187, 82, 228));
+  background: linear-gradient(to bottom right,rgb(78, 78, 250), rgb(244, 117, 71));
 }
 .components {
-  background:rgba(255, 255, 255, 0.15);
+  background:rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 16px 12px;
   display: flex;
