@@ -1,0 +1,142 @@
+/* ******* Items Component ********* */
+.card-container {
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  width: 380px;
+  height: 380px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .item-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.item-category {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.item-price {
+  color: #e44d26;
+  margin-bottom: 12px;
+}
+
+.addTocartBtn {
+  background-color: #e44d26;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.addTocartBtn:hover {
+  background-color: #da3518;
+}
+
+/* ******* Cart Component ********* */
+.cart-container {
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cart-heading {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 16px;
+  width: 100%;
+  text-align: center;
+}
+.cart-item-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin: 28px;
+}
+.cart {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  gap:36px;
+ }
+
+.single-item {
+  margin: 16px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.single-item .cart-prod-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.single-item .cart-prod-price {
+  color: #e44d26;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+.quantity{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity h4{
+  padding: 0 14px;
+  border: 1px solid;
+  padding: 8px 12px;
+
+}
+.cart button {
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  border: 0px;
+  color: white;
+  background-color: #000000;
+}
