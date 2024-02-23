@@ -1,16 +1,22 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  const handleSignup = (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
 
-    console.log("Email:", email);
-    console.log("Password:", password);
-
+    axios.post("http://localhost:8000/signup",{email,password})
+    .then(res => {
+      console.log(res);
+      navigate('/')
+    })
+    .catch(err => console.log(err))
+  
     setEmail("");
     setPassword("");
   };
@@ -18,7 +24,9 @@ const SignUp = () => {
   return (
     <div className="flex justify-center items-center h-screen mx-2">
       <div className="bg-white p-8 rounded shadow-md w-96">
-        <h2 className="text-2xl font-semibold mb-6 text-center text-blue-600">Sign Up</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-center text-blue-600">
+          Sign Up
+        </h2>
         <form onSubmit={handleSignup}>
           <div className="mb-4">
             <input
